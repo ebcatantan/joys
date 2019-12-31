@@ -79,4 +79,4 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 
 defined('SYSTEM_NAME') || define('SYSTEM_NAME', 'Joys Dental Clinic Management System');
 defined('SYSTEM_TITLE') || define('SYSTEM_TITLE', 'JOYS');
-defined('PERPAGE') || define('PERPAGE', 2);
+defined('PERPAGE') || define('PERPAGE', 10);
