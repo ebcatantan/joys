@@ -46,7 +46,7 @@ class Validation
                 'required' => 'Node desciption field is required.'
             ]
         ],
-        
+
     ];
 
     public $role = [
@@ -73,7 +73,7 @@ class Validation
                 'required' => 'Landing Page field is required.'
             ]
         ],
-        
+
     ];
 
 	public $user = [
@@ -138,7 +138,7 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
     ];
 
     public $user_edit = [
@@ -182,7 +182,7 @@ class Validation
                 'matches' => 'Password Retype field must match password.'
             ]
         ],
-        
+
         'birthdate' => [
             'label'  => 'Birthdate',
             'rules'  => 'required',
@@ -197,7 +197,74 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
+    ];
+
+		public $dentists = [
+        'last_name' => [
+            'label'  => 'Lastname',
+            'rules'  => 'required|alpha',
+            'errors' => [
+                'required' => 'Last Name field is required.'
+            ]
+        ],
+
+        'first_name' => [
+            'label'  => 'Firstname',
+            'rules'  => 'required|alpha',
+            'errors' => [
+                'required' => 'First Name field is required.'
+            ]
+        ],
+
+        'middle_name' => [
+            'label'  => 'Middlename',
+            'rules'  => 'required|alpha',
+            'errors' => [
+                'required' => 'Middle Name field is required.'
+            ]
+        ],
+
+				'birthdate' => [
+            'label'  => 'Birthdate',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Birthdate field is required.'
+            ]
+        ],
+
+				'licence_number' => [
+            'label'  => 'Licence Number',
+            'rules'  => 'required|numeric',
+            'errors' => [
+                'required' => 'Licence Number field is required.'
+            ]
+        ],
+
+				'address' => [
+            'label'  => 'Address',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Address field is required.'
+            ]
+        ],
+
+				'gender' => [
+						'label'  => 'Gender',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Gender field is required.'
+						]
+				],
+
+				'contact_number' => [
+						'label'  => 'Contact Number',
+						'rules'  => 'required|numeric|regex_match[/^[0-9]{11}$/]',
+						'errors' => [
+								'required' => 'Contact Number field is required.'
+						]
+				],
+
     ];
 
 	//--------------------------------------------------------------------
