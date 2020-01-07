@@ -46,7 +46,7 @@ class Validation
                 'required' => 'Node desciption field is required.'
             ]
         ],
-        
+
     ];
 
     public $role = [
@@ -73,8 +73,10 @@ class Validation
                 'required' => 'Landing Page field is required.'
             ]
         ],
-        
+
     ];
+
+
 
 	public $user = [
         'lastname' => [
@@ -138,7 +140,7 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
     ];
 
     public $user_edit = [
@@ -182,7 +184,7 @@ class Validation
                 'matches' => 'Password Retype field must match password.'
             ]
         ],
-        
+
         'birthdate' => [
             'label'  => 'Birthdate',
             'rules'  => 'required',
@@ -197,7 +199,24 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
+    ];
+		public $allergies = [
+        'med_name' => [
+            'label'  => 'Medicine Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Medicine Name field is required.'
+            ]
+        ],
+
+        'description' => [
+            'label'  => 'Medicine Description',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Medicine description field is required.'
+            ]
+        ],
     ];
 
 	//--------------------------------------------------------------------

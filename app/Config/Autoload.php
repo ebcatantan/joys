@@ -55,9 +55,10 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 			'App'         => APPPATH,                // To ensure filters, etc still found,
 			//'BaseControl' => APPPATH . 'Controllers',
 			'Modules\Node'  => ROOTPATH.'modules/Node',
-			'Modules\UserManagement'  => ROOTPATH.'modules/UserManagement'
+			'Modules\UserManagement'  => ROOTPATH.'modules/UserManagement',
+			'Modules\MedicineAllergiesManagement'  => ROOTPATH.'modules/MedicineAllergiesManagement',
 		];
-		
+
 		//echo $psr4['Modules'];  die();
 
 		/**
