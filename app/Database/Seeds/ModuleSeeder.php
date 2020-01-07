@@ -23,6 +23,14 @@ class ModuleSeeder extends \CodeIgniter\Database\Seeder
                         'status' => 'a',
                         'created_at' => date('Y-m-d H:i:s')
                     ],
+                    [
+                        'module_name' => 'payment management',
+                        'module_description' => 'payment management',
+                        'module_icon' => '<i class="fas fa-users-cog"></i>',//change font-awesome related to the topic
+                        'order' => 3,
+                        'status' => 'a',
+                        'created_at' => date('Y-m-d H:i:s')
+                    ],
                 ];
                 $db      = \Config\Database::connect();
                 $builder = $db->table($this->table);

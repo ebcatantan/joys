@@ -267,6 +267,43 @@ class Validation
 
     ];
 
+		public $payments = [
+        'consultation_id' => [
+            'label'  => 'Consulatation ID',
+            'rules'  => 'required|numeric',
+            'errors' => [
+                'required' => 'Consulatation ID field is required.',
+								'numeric' => 'Consulatation ID are numbers only.'
+            ]
+        ],
+
+        'payment_date' => [
+            'label'  => 'Payment Date',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Payment Date field is required.'
+            ]
+        ],
+
+        'paid_amount' => [
+            'label'  => 'Paid Amount',
+            'rules'  => 'required|numeric',
+            'errors' => [
+                'required' => 'Paid Amount field is required.',
+								'numeric' => 'Paid Amount are numbers only.'
+            ]
+        ],
+
+				'recieved_by' => [
+            'label'  => 'Recieved By',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Recieved By field is required.',
+            ]
+        ],
+
+    ];
+
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------

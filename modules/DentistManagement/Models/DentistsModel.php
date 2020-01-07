@@ -7,7 +7,7 @@ class DentistsModel extends \CodeIgniter\Model
 {
     protected $table = 'dentists';
 
-    protected $allowedFields = ['last_name', 'first_name', 'middle_name', 'ext_name', 'birthdate', 'licence_number', 'address', 'gender', 'contact_number', 'created_at','updated_at', 'deleted_at'];
+    protected $allowedFields = ['last_name', 'first_name', 'middle_name', 'ext_name', 'birthdate', 'status', 'licence_number', 'address', 'gender', 'contact_number', 'created_at','updated_at', 'deleted_at'];
 
     public function getDentistWithCondition($conditions = [])
 	{
