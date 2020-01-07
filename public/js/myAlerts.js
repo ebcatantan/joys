@@ -1,27 +1,27 @@
-function alert_error(message){  
+function alert_error(message){
 	 Swal.fire({
 		  icon: 'error',
 		  title: 'Oops...',
 		  text: message,
 		  footer: '<a href>Why do I have this issue?</a>'
-		}); 
-} 
+		});
+}
 
-function alert_success(message){  
+function alert_success(message){
 	 Swal.fire(
 	  'Good job!',
 	  message,
 	  'success'
 	);
-} 
+}
 
-function alert_login_success(message){  
+function alert_login_success(message){
 	 Swal.fire(
 	  'Login Success!',
 	  message,
 	  'success'
 	);
-} 
+}
 
 function confirmDelete(url, id)
 {
@@ -47,7 +47,7 @@ function confirmDelete(url, id)
 					  title: 'Oops...',
 					  text: 'Something went wrong!',
 					  footer: '<a href>Why do I have this issue?</a>'
-					}); 
+					});
 	             },
 	             success: function(data) {
 	             	   Swal.fire(
@@ -65,4 +65,4 @@ function confirmDelete(url, id)
 	          });
 		  }
 	})
-} 
+}

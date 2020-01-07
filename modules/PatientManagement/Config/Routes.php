@@ -10,3 +10,15 @@ $routes->group('patients', ['namespace' => 'Modules\PatientManagement\Controller
     $routes->match(['get', 'post'], 'edit/(:num)', 'Patients::edit_patient/$1');
     $routes->delete('delete/(:num)', 'Patients::delete_patient/$1');
 });
+
+$routes->group('medical-history', ['namespace' => 'Modules\PatientManagement\Controllers'], function($routes)
+{
+    $routes->get('/', 'Medicals::index');
+    $routes->get('(:num)', 'Medicals::index/$1');
+    $routes->get('show/(:num)', 'Medicals::show_medical/$1');
+    $routes->get('own/(:num)', 'Medicals::medical_own_profile/$1');
+    //$routes->get('edit-own/(:num)', 'Users::user_edit_own_profile/$1');
+    $routes->match(['get', 'post'], 'add', 'Medicals::add_medical');
+    $routes->match(['get', 'post'], 'edit/(:num)', 'Medicals::edit_medical/$1');
+    $routes->delete('delete/(:num)', 'Medicals::delete_medical/$1');
+});

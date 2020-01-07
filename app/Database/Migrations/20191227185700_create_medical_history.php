@@ -17,7 +17,7 @@ class CreateMedicalHistory extends \CodeIgniter\Database\Migration {
                               'constraint'     => '20'
                         ],
 
-                        'is_healty'       => [
+                        'is_healthy'       => [
                                 'type'           => 'TINYINT',
                                 'constraint'     => '1',
                         ],

@@ -13,7 +13,7 @@
     <thead class="thead-dark">
       <tr class="text-center">
         <th>#</th>
-        <th>Name</th>
+        <th>Patient Name</th>
         <th>Gender</th>
         <th>Contact#</th>
         <th>Address</th>

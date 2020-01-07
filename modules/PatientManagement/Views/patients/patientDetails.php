@@ -15,7 +15,8 @@
     <div class="row">
       <div class="col-md-12">
         <span class="field">Birthdate</span>
-        <span class="field-value"><?= ucfirst($patients[0]['birthdate']) ?></span>
+        <!-- <span class="field-value"><?= ucfirst($patients[0]['birthdate']) ?></span> -->
+        <span class="field-value"><?= $patients[0]['birthdate'] ?> (<?= floor((time() - strtotime($patients[0]['birthdate'])) / 31556926) ?> yrs old) </span>
       </div>
     </div>
     <div class="row">

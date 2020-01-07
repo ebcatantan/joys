@@ -18,7 +18,7 @@ class ModuleSeeder extends \CodeIgniter\Database\Seeder
                     [
                         'module_name' => 'patient management',
                         'module_description' => 'patient management',
-                        'module_icon' => '<i class="fas fa-users-procedures"></i>',
+                        'module_icon' => '<i class="fas fa-user-injured"></i>',
                         'order' => 2,
                         'status' => 'a',
                         'created_at' => date('Y-m-d H:i:s')

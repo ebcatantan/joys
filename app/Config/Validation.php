@@ -331,6 +331,113 @@ class Validation
 
     ];
 
+		public $medical = [
+							'patient_id' => [
+									'label'  => 'Patient Name',
+									'rules'  => 'required|min_length[1]',
+									'errors' => [
+											'required' => 'Patient Name field is required.',
+											'min_length' => 'Patient Name field is required'
+									]
+							],
+
+							'is_healthy' => [
+			            'label'  => 'Healthy',
+			            'rules'  => 'required',
+			            'errors' => [
+			                'required' => 'This field requires an answer.'
+			            ]
+			        ],
+
+							'is_taking_medicine_now' => [
+									'label'  => 'Taking Medicine Now',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'med_taken_now' => [
+									'label'  => 'Taken Medicine Now',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'had_illness_operation' => [
+									'label'  => 'Illness Operation',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'illness_operation' => [
+									'label'  => 'Operation Illness',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'is_hospitalized' => [
+									'label'  => 'Hospitalized',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'hospitalized_details' => [
+									'label'  => 'Hospitalized Details',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'is_taking_sprescription' => [
+									'label'  => 'Taking Prescription',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'nprescription_details' => [
+									'label'  => 'Prescription Details',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'is_pregnant' => [
+									'label'  => 'Pregnant',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'patient_alergies' => [
+									'label'  => 'Patient Allergies',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+
+							'patient_medical_diseases' => [
+									'label'  => 'Patient Medical Diseases',
+									'rules'  => 'required',
+									'errors' => [
+											'required' => 'This field requires an answer.'
+									]
+							],
+		];
+
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------

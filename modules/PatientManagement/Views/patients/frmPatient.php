@@ -27,7 +27,6 @@
 
       <div class="row">
         <div class="col-md-12">
-          <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
             <div class="row">
               <div class="col-md-6 offset-md-3">
                 <div class="form-group">
@@ -44,7 +43,6 @@
 
         <div class="row">
             <div class="col-md-12">
-              <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                 <div class="row">
                   <div class="col-md-6 offset-md-3">
                     <div class="form-group">
@@ -61,7 +59,6 @@
 
         <div class="row">
           <div class="col-md-12">
-            <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
               <div class="row">
                 <div class="col-md-6 offset-md-3">
                   <div class="form-group">
@@ -78,7 +75,6 @@
 
         <div class="row">
           <div class="col-md-12">
-            <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
               <div class="row">
                 <div class="col-md-6 offset-md-3">
                   <div class="form-group">
@@ -95,7 +91,6 @@
 
           <div class="row">
             <div class="col-md-12">
-              <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                 <div class="row">
                   <div class="col-md-6 offset-md-3">
                     <div class="form-group">
@@ -112,19 +107,19 @@
 
             <div class="row">
               <div class="col-md-12">
-                <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                   <div class="row">
                     <div class="col-md-6 offset-md-3">
                       <div class="form-group">
                         <label for="gender">Gender</label>
                         <!-- <input name="gender" type="text" value="<?= isset($rec['gender']) ? $rec['gender'] : set_value('gender') ?>" class="form-control <?= $errors['gender'] ? 'is-invalid':'is-valid' ?>" id="gender" placeholder="Gender"> -->
-                        <select class="form-control" name="gender" value="<?= isset($rec['gender']) ? $rec['gender'] : set_value('gender') ?>" class="form-control <?= $errors['gender'] ? 'is-invalid':'is-valid' ?>" id="gender">
-                          <option value="M">Male</option>
-                          <option value="F">Female</option>
+                        <select class="form-control <?= $errors['gender'] ? 'is-invalid':'is-valid' ?>" name="gender" id="gender">
+                          <option value="">-- Please Select a Gender --</option>
+                          <option value='M' <?= $rec['gender'] == 'M'?'selected':'';?>>Male</option>
+                          <option value='F' <?= $rec['gender'] == 'F'?'selected':'';?>>Female</option>
                         </select>
                           <?php if($errors['gender']): ?>
-                                                          <div class="invalid-feedback">
-                              <?= $errors['gender'] ?>
+                          <div class="invalid-feedback">
+                          <?= $errors['gender'] ?>
                             </div>
                           <?php endif; ?>
                       </div>
@@ -133,7 +128,6 @@
 
               <div class="row">
                 <div class="col-md-12">
-                  <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                     <div class="row">
                       <div class="col-md-6 offset-md-3">
                         <div class="form-group">
@@ -150,7 +144,6 @@
 
                 <div class="row">
                   <div class="col-md-12">
-                    <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                       <div class="row">
                         <div class="col-md-6 offset-md-3">
                           <div class="form-group">
@@ -167,7 +160,6 @@
 
                   <div class="row">
                     <div class="col-md-12">
-                      <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                         <div class="row">
                           <div class="col-md-6 offset-md-3">
                             <div class="form-group">
@@ -184,12 +176,11 @@
 
                     <div class="row">
                       <div class="col-md-12">
-                        <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                           <div class="row">
                             <div class="col-md-6 offset-md-3">
                               <div class="form-group">
                                 <label for="contact_number">Contact Number</label>
-                                <input name="contact_number" type="text" value="<?= isset($rec['contact_number']) ? $rec['contact_number'] : set_value('contact_number') ?>" class="form-control <?= $errors['contact_number'] ? 'is-invalid':'is-valid' ?>" id="nationality" placeholder="Contact Number">
+                                <input name="contact_number" type="text" value="<?= isset($rec['contact_number']) ? $rec['contact_number'] : set_value('contact_number') ?>" class="form-control <?= $errors['contact_number'] ? 'is-invalid':'is-valid' ?>" id="contact_number" placeholder="Contact Number">
                                   <?php if($errors['contact_number']): ?>
                                     <div class="invalid-feedback">
                                       <?= $errors['contact_number'] ?>
@@ -201,12 +192,11 @@
 
                       <div class="row">
                         <div class="col-md-12">
-                          <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                             <div class="row">
                               <div class="col-md-6 offset-md-3">
                                 <div class="form-group">
                                   <label for="address">Address</label>
-                                  <input name="address" type="text" value="<?= isset($rec['address']) ? $rec['address'] : set_value('address') ?>" class="form-control <?= $errors['address'] ? 'is-invalid':'is-valid' ?>" id="nationality" placeholder="Address">
+                                  <input name="address" type="text" value="<?= isset($rec['address']) ? $rec['address'] : set_value('address') ?>" class="form-control <?= $errors['address'] ? 'is-invalid':'is-valid' ?>" id="address" placeholder="Address">
                                     <?php if($errors['address']): ?>
                                       <div class="invalid-feedback">
                                         <?= $errors['address'] ?>
@@ -218,7 +208,6 @@
 
                         <div class="row">
                           <div class="col-md-12">
-                            <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                               <div class="row">
                                 <div class="col-md-6 offset-md-3">
                                   <div class="form-group">
@@ -235,7 +224,6 @@
 
                           <div class="row">
                             <div class="col-md-12">
-                              <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                                 <div class="row">
                                   <div class="col-md-6 offset-md-3">
                                     <div class="form-group">
@@ -252,7 +240,6 @@
 
                             <div class="row">
                               <div class="col-md-12">
-                                <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                                   <div class="row">
                                     <div class="col-md-6 offset-md-3">
                                       <div class="form-group">
@@ -269,7 +256,6 @@
 
                               <div class="row">
                                 <div class="col-md-12">
-                                  <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                                     <div class="row">
                                       <div class="col-md-6 offset-md-3">
                                         <div class="form-group">
@@ -286,7 +272,6 @@
 
                               <div class="row">
                                 <div class="col-md-12">
-                                  <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                                     <div class="row">
                                       <div class="col-md-6 offset-md-3">
                                         <div class="form-group">
@@ -303,7 +288,6 @@
 
                               <div class="row">
                                 <div class="col-md-12">
-                                  <form action="<?= base_url() ?>patients/<?= isset($rec) ? 'edit/'.$rec['id'] : 'add' ?>" method="post">
                                     <div class="row">
                                       <div class="col-md-6 offset-md-3">
                                         <div class="form-group">

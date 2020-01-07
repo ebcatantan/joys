@@ -17,17 +17,19 @@ if (! function_exists('name_on_system'))
 					switch($table)
 					{
 						case 'roles':
-							$str = $list['role_name'];						
+							$str = $list['role_name'];
 							break;
-						case 'users':					
-							$str = $list['firstname'].' '.$list['lastname'];						
+						case 'users':
+							$str = $list['firstname'].' '.$list['lastname'];
 							break;
-						case 'modules':					
-							$str = $list['module_name'];						
+						case 'modules':
+							$str = $list['module_name'];
 							break;
-						case 'permissions':					
-							$str = $list['function_name'];						
+						case 'permissions':
+							$str = $list['function_name'];
 							break;
+						case 'patients':
+							$str = $list['last_name'].', '.$list['first_name'].' '.$list['middle_name'].' '.$list['ext_name'];
 						default:
 							break;
 					}
