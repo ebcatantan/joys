@@ -79,7 +79,7 @@
         <div class="col-md-6 offset-md-3">
           <div class="form-group">
             <label for="total_item_used">Total Item Used</label>
-            <input name="total_item_used" type="number" class="form-control <?= $errors['total_item_used'] ? 'is-invalid':'is-valid'  ?>" id="total_item_used" value="<?= isset($rec['total_item_used']) ? $rec['description'] : set_value('total_item_used') ?>" placeholder="Total Item Used" rows="1">
+            <input name="total_item_used" type="number" class="form-control <?= $errors['total_item_used'] ? 'is-invalid':'is-valid'  ?>" id="total_item_used" value="<?= isset($rec['total_item_used']) ? $rec['total_item_used'] : set_value('total_item_used') ?>" placeholder="Total Item Used" rows="1">
             <?php if($errors['total_item_used']): ?>
                 <div class="invalid-feedback">
                   <?= $errors['total_item_used'] ?>
