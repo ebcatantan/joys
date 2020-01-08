@@ -51,7 +51,7 @@
 				  <div class="row">
 			        <div class="col-sm-12">
 			          <i class="fab fa-creative-commons"></i>
-			          <p id="developer-login">Developed by IT Training and Solutions Engineering Center</p>
+			          <p id="developer-login">Developed by DICT II-I Training and Solutions Engineering Center</p>
 			          <p id="copy-statement-login">
 			            Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 			          </p>
