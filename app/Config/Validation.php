@@ -328,6 +328,57 @@ class Validation
                 'required' => 'Last Dental Visit field is required.'
             ]
         ],
+    public $medicine  	 = [
+        'medicine_name' => [
+            'label'  => 'Medicine Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Medicine Name field is required.'
+            ]
+        ],
+        'generic_name' => [
+            'label'  => 'Generic Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Generic Name field is required.'
+            ]
+        ],
+           'description' => [
+            'label'  => 'Description',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Description field is required.'
+            ]
+        ],
+           'unit_of_measure' => [
+            'label'  => 'Unit of measure',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Unit of measure field is required.'
+            ]
+        ],
+           'item_per_unit' => [
+            'label'  => 'Item for unit',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Item per unit field is required.'
+            ]
+        ],
+           'unit_on_stocks' => [
+            'label'  => 'Unit on stocks',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Unit on stocks field is required.'
+            ]
+        ],
+           'reorder_level' => [
+            'label'  => 'Reorder level',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Reorder level field is required.'
+            ]
+        ],
+
 
     ];
 
