@@ -28,7 +28,7 @@ class Patients extends BaseController
 
         $data['patients'] = $model->getPatientWithFunction(['status'=> 'a', 'limit' => PERPAGE, 'offset' =>  $offset]);
 				//die("here");
-        $data['function_title'] = "Patients List";
+        $data['function_title'] = "List of Patients";
         $data['viewName'] = 'Modules\PatientManagement\Views\patients\index';
         echo view('App\Views\theme\index', $data);
     }

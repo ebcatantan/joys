@@ -47,5 +47,6 @@ class Migrate extends \CodeIgniter\Controller
         $seeder->call('ModuleSeeder');
         $seeder->call('PermissionSeeder');
         $seeder->call('PermissionPatientSeeder');
+        $seeder->call('PermissionSupplyStocksSeeder');
     }
 }

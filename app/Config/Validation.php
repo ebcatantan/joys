@@ -331,6 +331,66 @@ class Validation
 
     ];
 
+		public $stocks = [
+				'supply_name' => [
+						'label'  => 'Supply Name',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Supply Name field is required.'
+						]
+				],
+				'brand_name' => [
+						'label'  => 'Brand Name',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Brand Name field is required.'
+						]
+				],
+				'description' => [
+						'label'  => 'Description',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Description field is required.'
+						]
+				],
+				'date_purchased' => [
+						'label'  => 'Date Purchased',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Date Purchased field is required.'
+						]
+				],
+				'total_unit_purchased' => [
+						'label'  => 'Total Unit Purchased',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Total unit Purchased field is required.'
+						]
+				],
+				'total_item_used' => [
+						'label'  => 'Total Item Used',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Total Item Used field is required.'
+						]
+				],
+				'unit_on_stocks' => [
+						'label'  => 'Unit on Stocks',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Unit on Stocks field is required.'
+						]
+				],
+				'expiration_date' => [
+						'label'  => 'Expiration Date',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Expiration Date field is required.'
+						]
+				],
+
+			];
+
 		public $medical = [
 							'patient_id' => [
 									'label'  => 'Patient Name',
