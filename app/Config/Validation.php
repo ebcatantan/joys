@@ -199,6 +199,53 @@ class Validation
         ],
         
     ];
+     public $supplies = [
+        'supply_name' => [
+            'label'  => 'Supply Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Supply Name field is required.'
+            ]
+        ],
+
+        'description' => [
+            'label'  => 'Supply Description',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Supply desciption field is required.'
+            ]
+        ],
+
+        'unit_of_measure' => [
+            'label'  => 'Unit of measurement',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Unit of measurement Page field is required.'
+            ]
+        ],
+        'item_per_unit' => [
+            'label'  => 'Item per Unit',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Item per Unit Page field is required.'
+            ]
+        ],
+        'unit_on_stocks' => [
+            'label'  => 'Unit on Stocks',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Unit on Stocks Page field is required.'
+            ]
+        ],
+        'reorder_level' => [
+            'label'  => 'Reorder Level',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Reorder Level Page field is required.'
+            ]
+        ],
+        
+    ];
 
 	//--------------------------------------------------------------------
 	// Rules
