@@ -46,7 +46,7 @@ class Validation
                 'required' => 'Node desciption field is required.'
             ]
         ],
-        
+
     ];
 
     public $role = [
@@ -73,7 +73,7 @@ class Validation
                 'required' => 'Landing Page field is required.'
             ]
         ],
-        
+
     ];
 
 	public $user = [
@@ -138,7 +138,7 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
     ];
 
     public $user_edit = [
@@ -182,7 +182,7 @@ class Validation
                 'matches' => 'Password Retype field must match password.'
             ]
         ],
-        
+
         'birthdate' => [
             'label'  => 'Birthdate',
             'rules'  => 'required',
@@ -197,7 +197,34 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
+    ];
+
+		public $dental_condition = [
+        'legend' => [
+            'label'  => 'Legend',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Legend field is required.'
+            ]
+        ],
+
+				// 'condition_name' => [
+        //     'label'  => 'Condition Name',
+        //     'rules'  => 'required',
+        //     'errors' => [
+        //         'required' => 'Condition Name field is required.'
+        //     ]
+        // ],
+				//
+        // 'description' => [
+        //     'label'  => 'Description',
+        //     'rules'  => 'required',
+        //     'errors' => [
+        //         'required' => 'Desciption field is required.'
+        //     ]
+        // ],
+
     ];
 
 	//--------------------------------------------------------------------
