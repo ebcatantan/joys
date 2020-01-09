@@ -46,7 +46,7 @@ class Validation
                 'required' => 'Node desciption field is required.'
             ]
         ],
-        
+
     ];
 
     public $role = [
@@ -73,7 +73,7 @@ class Validation
                 'required' => 'Landing Page field is required.'
             ]
         ],
-        
+
     ];
 
 	public $user = [
@@ -138,7 +138,7 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
     ];
 
     public $user_edit = [
@@ -182,7 +182,7 @@ class Validation
                 'matches' => 'Password Retype field must match password.'
             ]
         ],
-        
+
         'birthdate' => [
             'label'  => 'Birthdate',
             'rules'  => 'required',
@@ -197,7 +197,59 @@ class Validation
                 'required' => 'Role field is required.'
             ]
         ],
-        
+
+    ];
+
+		public $medicine_stock = [
+
+				'brand_name' => [
+            'label'  => 'Brand Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Brand Name field is required.'
+            ]
+        ],
+
+        'date_purchased' => [
+            'label'  => 'Date Purchased',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Date Purchased field is required.'
+            ]
+        ],
+
+        'total_unit_purchased' => [
+            'label'  => 'Total Unit Purchased',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Total Unit Purchased field is required.'
+            ]
+        ],
+
+				'total_item_used' => [
+            'label'  => 'Total Item Used',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Total Item Used field is required.'
+            ]
+        ],
+
+				'unit_on_stock' => [
+            'label'  => 'Unit on Stock',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Unit on Stock field is required.'
+            ]
+        ],
+
+				'expiration_date' => [
+            'label'  => 'Expiration Date',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Expiration Date field is required.'
+            ]
+        ],
+
     ];
 
 	//--------------------------------------------------------------------
