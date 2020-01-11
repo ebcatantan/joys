@@ -200,6 +200,33 @@ class Validation
         
     ];
 
+    public $procedure = [
+        'procedure_name' => [
+            'label'  => ' Dental Procedure Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Dental Procedure field is required.'
+            ]
+        ],
+            /*
+         'price' => [
+             'label'  => 'Procedure Price',
+             'rules'  => 'required',
+             'errors' => [
+                 'required' => 'Price field is required.'
+             ]
+         ],
+
+         'description' => [
+             'label'  => 'Dental Procedure Description',
+             'rules'  => 'required',
+             'errors' => [
+                 'required' => 'Dental Procedure field is required.'
+             ]
+         ], */
+        
+    ]; 
+
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------
