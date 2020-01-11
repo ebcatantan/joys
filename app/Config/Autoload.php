@@ -57,6 +57,7 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 			'Modules\Node'  => ROOTPATH.'modules/Node',
 			'Modules\UserManagement'  => ROOTPATH.'modules/UserManagement',
 			'Modules\MedicineAllergiesManagement'  => ROOTPATH.'modules/MedicineAllergiesManagement',
+			'Modules\ConsultationSchedules'  => ROOTPATH.'modules/ConsultationSchedules',
 		];
 
 		//echo $psr4['Modules'];  die();

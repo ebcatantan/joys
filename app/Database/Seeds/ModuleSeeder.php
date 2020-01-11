@@ -16,10 +16,18 @@ class ModuleSeeder extends \CodeIgniter\Database\Seeder
                         'created_at' => date('Y-m-d H:i:s')
                     ],
                     [
-                        'module_name' => 'medicine allergies management',
-                        'module_description' => 'medicine allergies management',
+                        'module_name' => 'Clinic Settings',
+                        'module_description' => 'Clinic Settings',
                         'module_icon' => '<i class="fas fa-users-cog"></i>',
                         'order' => 2,
+                        'status' => 'a',
+                        'created_at' => date('Y-m-d H:i:s')
+                    ],
+                    [
+                        'module_name' => 'consultation schedule',
+                        'module_description' => 'consultation schedule',
+                        'module_icon' => '<i class="fas fa-users-cog"></i>',
+                        'order' => 3,
                         'status' => 'a',
                         'created_at' => date('Y-m-d H:i:s')
                     ],
