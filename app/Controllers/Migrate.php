@@ -53,5 +53,7 @@ class Migrate extends \CodeIgniter\Controller
         $seeder->call('PermissionDental_conditionsSeeder');
         $seeder->call('PermissionProcedureSeeder');
         $seeder->call('MedstockSeeder');
+        $seeder->call('PermissionDentistManagementSeeder');
+        $seeder->call('PermissionPaymentManagementSeeder');
     }
 }
