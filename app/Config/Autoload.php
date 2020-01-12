@@ -63,6 +63,7 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 			'Modules\ClinicSettings'  => ROOTPATH.'modules/ClinicSettings',
 			'Modules\Dental_conditionManagement'  => ROOTPATH.'modules/Dental_conditionManagement',
 			'Modules\DentalProceduresManagement'  => ROOTPATH.'modules/DentalProceduresManagement',
+			'Modules\Inventory'  => ROOTPATH.'modules/Inventory',
 		];
 
 		//echo $psr4['Modules'];  die();

@@ -472,6 +472,58 @@ class Validation
                 'required' => 'Reorder level field is required.'
             ]
         ],
+			];
+
+		public $medicine_stock = [
+
+				'brand_name' => [
+            'label'  => 'Brand Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Brand Name field is required.'
+            ]
+        ],
+
+        'date_purchased' => [
+            'label'  => 'Date Purchased',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Date Purchased field is required.'
+            ]
+        ],
+
+        'total_unit_purchased' => [
+            'label'  => 'Total Unit Purchased',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Total Unit Purchased field is required.'
+            ]
+        ],
+
+				'total_item_used' => [
+            'label'  => 'Total Item Used',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Total Item Used field is required.'
+            ]
+        ],
+
+				'unit_on_stock' => [
+            'label'  => 'Unit on Stock',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Unit on Stock field is required.'
+            ]
+        ],
+
+				'expiration_date' => [
+            'label'  => 'Expiration Date',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Expiration Date field is required.'
+            ]
+        ],
+
     ];
 
 		public $stocks = [
@@ -641,32 +693,32 @@ class Validation
 							],
 		];
 
-    // public $procedure = [
-    //     'procedure_name' => [
-    //         'label'  => ' Dental Procedure Name',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Dental Procedure field is required.'
-    //         ]
-    //     ],
-		//
-    //      'price' => [
-    //          'label'  => 'Procedure Price',
-    //          'rules'  => 'required',
-    //          'errors' => [
-    //              'required' => 'Price field is required.'
-    //          ]
-    //      ],
-		//
-    //      'description' => [
-    //          'label'  => 'Dental Procedure Description',
-    //          'rules'  => 'required',
-    //          'errors' => [
-    //              'required' => 'Dental Procedure field is required.'
-    //          ]
-    //      ],
-		//
-    // ];
+    public $procedure = [
+        'procedure_name' => [
+            'label'  => ' Dental Procedure Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Dental Procedure field is required.'
+            ]
+        ],
+
+         // 'price' => [
+         //     'label'  => 'Procedure Price',
+         //     'rules'  => 'required',
+         //     'errors' => [
+         //         'required' => 'Price field is required.'
+         //     ]
+         // ],
+				 //
+         // 'description' => [
+         //     'label'  => 'Dental Procedure Description',
+         //     'rules'  => 'required',
+         //     'errors' => [
+         //         'required' => 'Dental Procedure field is required.'
+         //     ]
+         // ],
+
+    ];
 
 	//--------------------------------------------------------------------
 	// Rules

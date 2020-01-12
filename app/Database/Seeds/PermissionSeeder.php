@@ -21,7 +21,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 1,
                         'allowed_roles' => '[1,2]',
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'show user details',
@@ -37,7 +37,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'create user account',
@@ -53,7 +53,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'list of users',
@@ -69,7 +69,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 1,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'edit user account',
@@ -85,7 +85,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'delete user account',
@@ -101,7 +101,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'show role details',
@@ -117,7 +117,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'create role',
@@ -133,7 +133,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'list of roles',
@@ -149,7 +149,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 1,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'edit role',
@@ -165,7 +165,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'delete role',
@@ -181,7 +181,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 3,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'roles permissions',
@@ -197,7 +197,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 1,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                     [
                         'function_name' => 'edit roles permissions',
@@ -213,7 +213,7 @@ class PermissionSeeder extends \CodeIgniter\Database\Seeder
                         'func_type' => 4,
                         'allowed_roles' => "[1]",
                         'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
+                        'created_at' => date('m-d-Y H:i:s')
                     ],
                 ];
                 //print_r($data); die();
