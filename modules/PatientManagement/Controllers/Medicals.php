@@ -102,7 +102,6 @@ class Medicals extends BaseController
 	    	if (!$this->validate('medical'))
 		    {
 		    	  $data['errors'] = \Config\Services::validation()->getErrors();
-
 		        $data['function_title'] = "Adding Medical History";
 		        $data['viewName'] = 'Modules\PatientManagement\Views\medicals\frmMedicals';
 		        echo view('App\Views\theme\index', $data);

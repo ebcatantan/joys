@@ -19,7 +19,7 @@ class Medicines extends BaseController
 
 	public function show_medicine($id)
 	{
-		
+
 		$this->hasPermissionRedirect('show-medicine');
 		$data['permissions'] = $this->permissions;
 
@@ -56,12 +56,12 @@ class Medicines extends BaseController
     {
     	$this->hasPermissionRedirect('list-medicine');
     	$model = new MedicinesModel();
-	// die("here");
-    	//kailangan ito para sa pagination
+
        	$data['all_items'] = $model->getMedicineWithCondition(['status'=> 'a']);
        	$data['offset'] = $offset;
 
         $data['medicines'] = $model->getMedicineWithFunction(['status'=> 'a', 'limit' => PERPAGE, 'offset' =>  $offset]);
+				//die("here");
 
         $data['function_title'] = "Medicines List";
         $data['viewName'] = 'Modules\MedicineManagement\Views\medicines\index';

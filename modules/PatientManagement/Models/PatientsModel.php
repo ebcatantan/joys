@@ -1,6 +1,7 @@
 <?php
 namespace Modules\PatientManagement\Models;
 
+use Modules\PatientManagement\Models\MedicalsModel;
 use CodeIgniter\Model;
 
 class PatientsModel extends \CodeIgniter\Model
@@ -53,6 +54,10 @@ class PatientsModel extends \CodeIgniter\Model
 	{
 		$val_array['deleted_at'] = (new \DateTime())->format('Y-m-d H:i:s');
 		$val_array['status'] = 'd';
+    $medical_model = new MedicalsModel();
+    $medical_model->whereIn('patient_id', $id)
+    ->set($val_array)
+    ->update();
 		return $this->update($id, $val_array);
 	}
 }

@@ -40,7 +40,6 @@ class Migrate extends \CodeIgniter\Controller
 
     public function seeder()
     {
-        // die("here");
         $seeder = \Config\Database::seeder();
         $seeder->call('RolesSeeder');
         $seeder->call('UsersSeeder');
@@ -48,7 +47,6 @@ class Migrate extends \CodeIgniter\Controller
         $seeder->call('PermissionSeeder');
         $seeder->call('PermissionPatientSeeder');
         $seeder->call('PermissionSupplyStocksSeeder');
-        $seeder->call('MedicinePermissionSeeder');
-
+        $seeder->call('PermissionMedicineSeeder');
     }
 }

@@ -1,6 +1,6 @@
 <?php namespace App\Database\Seeds;
 
-class MedicinePermissionSeeder extends \CodeIgniter\Database\Seeder
+class PermissionMedicineSeeder extends \CodeIgniter\Database\Seeder
 {
         public $table = 'permissions';
 
@@ -58,7 +58,7 @@ class MedicinePermissionSeeder extends \CodeIgniter\Database\Seeder
                     [
                         'function_name' => 'edit medicine',
                         'function_description' => 'edit medicine',
-                        'slugs' => 'edit-user',
+                        'slugs' => 'edit-medicine',
                         'name_on_class' => 'edit_medicine',
                         'page_title' => 'edit medicine',
                         'module_id' => '4',

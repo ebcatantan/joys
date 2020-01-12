@@ -1,7 +1,9 @@
 <?php
 namespace Modules\PatientManagement\Controllers;
 
+use Modules\UserManagement\Models\UsersModel;
 use Modules\PatientManagement\Models\PatientsModel;
+use Modules\PatientManagement\Models\MedicalsModel;
 use Modules\UserManagement\Models\PermissionsModel;
 use App\Controllers\BaseController;
 
@@ -71,7 +73,19 @@ class Patients extends BaseController
 		    {
 		        if($model->addPatients($_POST))
 		        {
-		        	$role_id = $model->insertID();
+		        	$patient_id = $model->insertID();
+							$UserModel = new UsersModel();
+							$user_data = [
+								'lastname' => $_POST['last_name'],
+								'firstname' => $_POST['first_name'],
+								'username' => $_POST['last_name'] . $_POST['first_name'],
+								'email' => $_POST['email'],
+								'password' => $UserModel->generateRandomString(8),
+								'role_id' => 2,
+								'birthdate' => $_POST['birthdate']
+							];
+							$UserModel->addUsers($user_data);
+
 		        	$_SESSION['success'] = 'You have added a new record';
 							$this->session->markAsFlashdata('success');
 		        	return redirect()->to(base_url('patients'));
@@ -86,7 +100,6 @@ class Patients extends BaseController
     	}
     	else
     	{
-
 	    		$data['function_title'] = "Adding Patient";
 	        $data['viewName'] = 'Modules\PatientManagement\Views\patients\frmPatient';
 	        echo view('App\Views\theme\index', $data);
@@ -143,7 +156,9 @@ class Patients extends BaseController
     	$this->hasPermissionRedirect('delete-patient');
 
     	$model = new PatientsModel();
+			$medical_model = new MedicalsModel();
     	$model->deletePatients($id);
+    	$medical_model->deleteMedicals($id);
     }
 
 }

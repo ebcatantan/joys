@@ -328,6 +328,7 @@ class Validation
                 'required' => 'Last Dental Visit field is required.'
             ]
         ],
+			];
     public $medicine  	 = [
         'medicine_name' => [
             'label'  => 'Medicine Name',
@@ -378,8 +379,6 @@ class Validation
                 'required' => 'Reorder level field is required.'
             ]
         ],
-
-
     ];
 
 		public $stocks = [

@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class MedicinesModel extends \CodeIgniter\Model
 {
-    protected $table = 'medicines';
+    protected $table = 'medicine';
 
     protected $allowedFields = ['medicine_name', 'generic_name', 'description', 'unit_of_measure', 'item_per_unit', 'unit_on_stocks', 'reorder_level', 'status', 'created_at','updated_at', 'deleted_at'];
 
@@ -22,7 +22,7 @@ class MedicinesModel extends \CodeIgniter\Model
 	{
 		$db = \Config\Database::connect();
 
-		$str = "SELECT * FROM medicines WHERE status = '".$args['status']."' LIMIT ". $args['offset'] .','.$args['limit'];
+		$str = "SELECT * FROM medicine WHERE status = '".$args['status']."' LIMIT ". $args['offset'] .','.$args['limit'];
 		//print_r($str); die();
 		$query = $db->query($str);
 
