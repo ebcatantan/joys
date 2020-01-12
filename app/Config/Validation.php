@@ -76,6 +76,8 @@ class Validation
 
     ];
 
+
+
 	public $user = [
 				'lastname' => [
             'label'  => 'Lastname',
@@ -787,6 +789,73 @@ class Validation
             ]
         ],
 
+
+        'description' => [
+            'label'  => 'Medicine Description',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Medicine description field is required.'
+            ]
+        ],
+    ];
+
+		public $schedules = [
+        'patient_id' => [
+            'label'  => 'Patient',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Patient field is required.'
+            ]
+        ],
+
+        'target_date_start' => [
+            'label'  => 'Target Date Start',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Target Date Start field is required.'
+            ]
+        ],
+
+        'target_date_end' => [
+            'label'  => 'Target Date End',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Target Date End field is required.'
+            ]
+        ],
+
+        'venue' => [
+            'label'  => 'Venue',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Venue field is required.'
+            ]
+        ],
+
+        'dentist_id' => [
+            'label'  => 'Dentist',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Dentist field is required.'
+            ]
+        ],
+
+        'consultation_sched' => [
+            'label'  => 'Consultation Schedules',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Consultation Schedules field is required.'
+            ]
+        ],
+
+
+        'is_approved' => [
+            'label'  => 'Approved by',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Approved by field is required.'
+            ]
+        ],
     ];
 
 	//--------------------------------------------------------------------

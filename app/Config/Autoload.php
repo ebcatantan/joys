@@ -66,6 +66,8 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 			'Modules\Inventory'  => ROOTPATH.'modules/Inventory',
 			'Modules\DentistManagement'  => ROOTPATH.'modules/DentistManagement',
 			'Modules\Reports'  => ROOTPATH.'modules/Reports',
+			'Modules\MedicineAllergiesManagement'  => ROOTPATH.'MedicineAllergiesManagement',
+			'Modules\ConsultationSchedules'  => ROOTPATH.'modules/ConsultationSchedules',
 		];
 
 		//echo $psr4['Modules'];  die();
