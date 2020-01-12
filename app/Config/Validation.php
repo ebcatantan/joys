@@ -77,7 +77,7 @@ class Validation
     ];
 
 	public $user = [
-        'lastname' => [
+				'lastname' => [
             'label'  => 'Lastname',
             'rules'  => 'required|alpha',
             'errors' => [
@@ -244,7 +244,27 @@ class Validation
                 'required' => 'Reorder Level Page field is required.'
             ]
         ],
-        
+
+			];
+
+				public $diseases = [
+		        'dn_name' => [
+		            'label'  => 'Name',
+		            'rules'  => 'required',
+		            'errors' => [
+		                'required' => 'Name field is required.',
+
+		            ]
+		        ],
+		        'description' => [
+		            'label'  => 'Description ',
+		            'rules'  => 'required',
+		            'errors' => [
+		                'required' => 'Description field is required.',
+
+		            ]
+		        ],
+
     ];
 
 		public $patient = [

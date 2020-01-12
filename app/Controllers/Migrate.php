@@ -41,13 +41,14 @@ class Migrate extends \CodeIgniter\Controller
     public function seeder()
     {
         $seeder = \Config\Database::seeder();
-        //$seeder->call('RolesSeeder');
-        //$seeder->call('UsersSeeder');
-        //$seeder->call('ModuleSeeder');
-        //$seeder->call('PermissionSeeder');
-        //$seeder->call('PermissionPatientSeeder');
-        //$seeder->call('PermissionSupplyStocksSeeder');
-        //$seeder->call('PermissionMedicineSeeder');
-        //$seeder->call('PermissionSuppliesSeeder');
+        $seeder->call('RolesSeeder');
+        $seeder->call('UsersSeeder');
+        $seeder->call('ModuleSeeder');
+        $seeder->call('PermissionSeeder');
+        $seeder->call('PermissionPatientSeeder');
+        $seeder->call('PermissionSupplyStocksSeeder');
+        $seeder->call('PermissionMedicineSeeder');
+        $seeder->call('PermissionSuppliesSeeder');
+        $seeder->call('PermissionDiseaseSeeder');
     }
 }
