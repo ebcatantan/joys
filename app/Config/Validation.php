@@ -264,6 +264,32 @@ class Validation
 
 		            ]
 		        ],
+				];
+
+		public $dental_condition = [
+        'legend' => [
+            'label'  => 'Legend',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Legend field is required.'
+            ]
+        ],
+
+				// 'condition_name' => [
+        //     'label'  => 'Condition Name',
+        //     'rules'  => 'required',
+        //     'errors' => [
+        //         'required' => 'Condition Name field is required.'
+        //     ]
+        // ],
+				//
+        // 'description' => [
+        //     'label'  => 'Description',
+        //     'rules'  => 'required',
+        //     'errors' => [
+        //         'required' => 'Desciption field is required.'
+        //     ]
+        // ],
 
     ];
 

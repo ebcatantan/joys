@@ -2,6 +2,8 @@
 namespace App\Controllers;
 
 use Modules\UserManagement\Models\PermissionsModel;
+use Modules\Dental_conditionManagement\Models\Dental_conditionsModel;
+use Modules\Dental_conditionManagement\Models\UsersModel;
 use Modules\UserManagement\Models\ModulesModel;
 
 /**
