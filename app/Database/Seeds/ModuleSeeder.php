@@ -24,42 +24,18 @@ class ModuleSeeder extends \CodeIgniter\Database\Seeder
                         'created_at' => date('Y-m-d H:i:s')
                     ],
                     [
-                        'module_name' => 'inventory management',
-                        'module_description' => 'inventory management',
+                        'module_name' => 'inventory',
+                        'module_description' => 'inventory',
                         'module_icon' => '<i class="fas fa-dolly-flatbed"></i>',
                         'order' => 3,
                         'status' => 'a',
                         'created_at' => date('Y-m-d H:i:s')
                     ],
                     [
-                        'module_name' => 'medicine management',
-                        'module_description' => 'medicine management',
-                        'module_icon' => '<i class="fas fa-dolly-flatbed"></i>',
-                        'order' => 4,
-                        'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
-                    ],
-                    [
-                        'module_name' => 'supplies management',
-                        'module_description' => 'supplies management',
-                        'module_icon' => '<i class="fas fa-dolly-flatbed"></i>',
-                        'order' => 5,
-                        'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
-                    ],
-                    [
                         'module_name' => 'clinic settings',
                         'module_description' => 'clinic settings',
-                        'module_icon' => '<i class="fas fa-dolly-flatbed"></i>',
-                        'order' => 6,
-                        'status' => 'a',
-                        'created_at' => date('Y-m-d H:i:s')
-                    ],
-                    [
-                        'module_name' => 'reports',
-                        'module_description' => 'reports',
-                        'module_icon' => '<i class="fas fa-dolly-flatbed"></i>',
-                        'order' => 7,
+                        'module_icon' => '<i class="fas fa-users-cog"></i>',
+                        'order' => 4,
                         'status' => 'a',
                         'created_at' => date('Y-m-d H:i:s')
                     ],

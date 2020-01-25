@@ -19,7 +19,6 @@
         <th>Item Used</th>
         <th>Unit on Stock</th>
         <th>Expiration Date</th>
-        <th>Status</th>
         <th>Action</th>
       </tr>
     </thead>
@@ -34,10 +33,6 @@
         <td><?= ucwords($medicine_stock['total_item_used']) ?></td>
         <td><?= ucwords($medicine_stock['unit_on_stock']) ?></td>
         <td><?= ucwords($medicine_stock['expiration_date']) ?></td>
-        <td><?= ucwords($medicine_stock['status']) ?></td>
-
-
-
         <td class="text-center">
           <?php
             users_action('medicine-stocks', $_SESSION['userPermmissions'], $medicine_stock['id']);

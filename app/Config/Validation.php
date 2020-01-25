@@ -76,8 +76,6 @@ class Validation
 
     ];
 
-
-
 	public $user = [
 				'lastname' => [
             'label'  => 'Lastname',
@@ -160,6 +158,7 @@ class Validation
                 'alpha' => 'Lastname must not have numbers.'
             ]
         ],
+
         'username' => [
             'label'  => 'Username',
             'rules'  => 'required',
@@ -167,6 +166,7 @@ class Validation
                 'required' => 'Username field is required.'
             ]
         ],
+
         'email' => [
             'label'  => 'Email',
             'rules'  => 'required|valid_email',
@@ -192,6 +192,7 @@ class Validation
                 'required' => 'Birthdate field is required.'
             ]
         ],
+
         'role_id' => [
             'label'  => 'Role',
             'rules'  => 'required',
@@ -201,6 +202,7 @@ class Validation
         ],
 
     ];
+
      public $supplies = [
         'supply_name' => [
             'label'  => 'Supply Name',
@@ -255,9 +257,9 @@ class Validation
 		            'rules'  => 'required',
 		            'errors' => [
 		                'required' => 'Name field is required.',
-
 		            ]
 		        ],
+
 		        'description' => [
 		            'label'  => 'Description ',
 		            'rules'  => 'required',
@@ -277,168 +279,87 @@ class Validation
             ]
         ],
 
-				// 'condition_name' => [
-        //     'label'  => 'Condition Name',
-        //     'rules'  => 'required',
-        //     'errors' => [
-        //         'required' => 'Condition Name field is required.'
-        //     ]
-        // ],
-				//
-        // 'description' => [
-        //     'label'  => 'Description',
-        //     'rules'  => 'required',
-        //     'errors' => [
-        //         'required' => 'Desciption field is required.'
-        //     ]
-        // ],
+				'condition_name' => [
+            'label'  => 'Condition Name',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Condition Name field is required.'
+            ]
+        ],
+
+        'description' => [
+            'label'  => 'Description',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Desciption field is required.'
+            ]
+        ],
 
     ];
 
-		// public $dentists = [
-    //     'last_name' => [
-    //         'label'  => 'Lastname',
-    //         'rules'  => 'required|alpha',
-    //         'errors' => [
-    //             'required' => 'Last Name field is required.'
-    //         ]
-    //     ],
-		// 	];
-		//
-		// public $patient = [
-    //     'last_name' => [
-    //         'label'  => 'Lastname',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Lastname field is required.'
-		// 						[
-		// 			],
-		//
-    //     'first_name' => [
-    //         'label'  => 'Firstname',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Firstname field is required.'
-    //         ]
-    //     ],
-		//
-    //     'middle_name' => [
-    //         'label'  => 'Middlename',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Middlename field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'birthdate' => [
-    //         'label'  => 'Birthdate',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Birthdate field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'gender' => [
-    //         'label'  => 'Gender',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Gender field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'occupation' => [
-    //         'label'  => 'Occupation',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Occupation field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'religion' => [
-    //         'label'  => 'Religion',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Religion field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'nationality' => [
-    //         'label'  => 'Nationality',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Nationality field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'contact_number' => [
-    //         'label'  => 'Contact Number',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Contact Number field is required.'
-		// 		'licence_number' => [
-    //         'label'  => 'Licence Number',
-    //         'rules'  => 'required|numeric',
-    //         'errors' => [
-    //             'required' => 'Licence Number field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'address' => [
-    //         'label'  => 'Address',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Address field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'email' => [
-    //         'label'  => 'Email Address',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Email Address field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'dental_insurance' => [
-    //         'label'  => 'Dental Insurance',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Dental Insurance field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'guardian_name' => [
-    //         'label'  => 'Guardian Name',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Guardian Name field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'guardian_relation' => [
-    //         'label'  => 'Guardian Relation',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Guardian Relation field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'previous_dentist' => [
-    //         'label'  => 'Previous Dentist',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Previous Dentist field is required.'
-    //         ]
-    //     ],
-		//
-		// 		'last_dental_visit' => [
-    //         'label'  => 'Last Dental Visit',
-    //         'rules'  => 'required',
-    //         'errors' => [
-    //             'required' => 'Last Dental Visit field is required.'
-    //         ]
-    //     ],
-		// 	];
+		public $dentists = [
+			'last_name' => [
+					'label'  => 'Lastname',
+					'rules'  => 'required|alpha',
+					'errors' => [
+							'required' => 'Lastname field is required.',
+							'alpha' => 'Lastname must not have numbers.'
+					]
+			],
+			'first_name' => [
+					'label'  => 'Firstname',
+					'rules'  => 'required|alpha',
+					'errors' => [
+							'required' => 'Firstname field is required.',
+							'alpha' => 'Lastname must not have numbers.'
+					]
+			],
+
+        'middle_name' => [
+            'label'  => 'Middlename',
+            'rules'  => 'required|alpha',
+            'errors' => [
+                'required' => 'Middlename field is required.',
+								'alpha' => 'Middlename must not have numbers.'
+            ]
+        ],
+				'birthdate' => [
+            'label'  => 'Birthdate',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Birthdate field is required.'
+            ]
+        ],
+				'licence_number' => [
+						'label'  => 'Licence Number',
+						'rules'  => 'required|numeric',
+						'errors' => [
+								'required' => 'Licence Number field is required.',
+						]
+				],
+				'address' => [
+						'label'  => 'Address',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Address field is required.'
+						]
+				],
+				'gender' => [
+						'label'  => 'Gender',
+						'rules'  => 'required',
+						'errors' => [
+								'required' => 'Gender field is required.'
+						]
+				],
+				'contact_number' => [
+            'label'  => 'Contact Number',
+            'rules'  => 'required|numeric|regex_match[/^[0-9]{11}$/]',
+            'errors' => [
+                'required' => 'Contact Number field is required.'
+							]
+				],
+
+			];
 
     public $medicine  	 = [
         'medicine_name' => [
@@ -719,145 +640,171 @@ class Validation
                 'required' => 'Dental Procedure field is required.'
             ]
         ],
+         'price' => [
+             'label'  => 'Procedure Price',
+             'rules'  => 'required',
+             'errors' => [
+                 'required' => 'Price field is required.'
+             ]
+         ],
 
-         // 'price' => [
-         //     'label'  => 'Procedure Price',
-         //     'rules'  => 'required',
-         //     'errors' => [
-         //         'required' => 'Price field is required.'
-         //     ]
-         // ],
-				 //
-         // 'description' => [
-         //     'label'  => 'Dental Procedure Description',
-         //     'rules'  => 'required',
-         //     'errors' => [
-         //         'required' => 'Dental Procedure field is required.'
-         //     ]
-         // ],
+         'description' => [
+             'label'  => 'Dental Procedure Description',
+             'rules'  => 'required',
+             'errors' => [
+                 'required' => 'Dental Procedure field is required.'
+             ]
+         ],
+    ];
+		public $patient = [
+			'last_name' => [
+					'label'  => 'Lastname',
+					'rules'  => 'required|alpha',
+					'errors' => [
+							'required' => 'Lastname field is required.',
+							'alpha' => 'Lastname must not have numbers.'
+					]
+			],
+			'first_name' => [
+					'label'  => 'Firstname',
+					'rules'  => 'required|alpha',
+					'errors' => [
+							'required' => 'Firstname field is required.',
+							'alpha' => 'Lastname must not have numbers.'
+					]
+			],
+
+        'middle_name' => [
+            'label'  => 'Middlename',
+            'rules'  => 'required|alpha',
+            'errors' => [
+                'required' => 'Middlename field is required.',
+								'alpha' => 'Middlename must not have numbers.'
+            ]
+        ],
+
+				'birthdate' => [
+            'label'  => 'Birthdate',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Birthdate field is required.'
+            ]
+        ],
 
 				'gender' => [
-						'label'  => 'Gender',
-						'rules'  => 'required',
-						'errors' => [
-								'required' => 'Gender field is required.'
-						]
-				],
+            'label'  => 'Gender',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Gender field is required.'
+            ]
+        ],
+
+				'occupation' => [
+            'label'  => 'Occupation',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Occupation field is required.'
+            ]
+        ],
+
+				'religion' => [
+            'label'  => 'Religion',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Religion field is required.'
+            ]
+        ],
+
+				'nationality' => [
+            'label'  => 'Nationality',
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'Nationality field is required.'
+            ]
+        ],
 
 				'contact_number' => [
-						'label'  => 'Contact Number',
-						'rules'  => 'required|numeric|regex_match[/^[0-9]{11}$/]',
-						'errors' => [
-								'required' => 'Contact Number field is required.'
-						]
+            'label'  => 'Contact Number',
+            'rules'  => 'required|numeric|regex_match[/^[0-9]{11}$/]',
+            'errors' => [
+                'required' => 'Contact Number field is required.'
+							]
 				],
 
-    ];
-
-		public $payments = [
-        'consultation_id' => [
-            'label'  => 'Consulatation ID',
-            'rules'  => 'required|numeric',
-            'errors' => [
-                'required' => 'Consulatation ID field is required.',
-								'numeric' => 'Consulatation ID are numbers only.'
-            ]
-        ],
-
-        'payment_date' => [
-            'label'  => 'Payment Date',
+				'address' => [
+            'label'  => 'Address',
             'rules'  => 'required',
             'errors' => [
-                'required' => 'Payment Date field is required.'
+                'required' => 'Address field is required.'
             ]
         ],
 
-        'paid_amount' => [
-            'label'  => 'Paid Amount',
-            'rules'  => 'required|numeric',
+				'email' => [
+            'label'  => 'Email Address',
+            'rules'  => 'required|valid_email',
             'errors' => [
-                'required' => 'Paid Amount field is required.',
-								'numeric' => 'Paid Amount are numbers only.'
+                'required' => 'Email Address field is required.',
+								'valid_email' => 'You must provide valid E-mail Address.'
             ]
         ],
 
-				'recieved_by' => [
-            'label'  => 'Recieved By',
+				'dental_insurance' => [
+            'label'  => 'Dental Insurance',
             'rules'  => 'required',
             'errors' => [
-                'required' => 'Recieved By field is required.',
+                'required' => 'Dental Insurance field is required.'
             ]
         ],
 
-
-        'description' => [
-            'label'  => 'Medicine Description',
+				'guardian_name' => [
+            'label'  => 'Guardian Name',
             'rules'  => 'required',
             'errors' => [
-                'required' => 'Medicine description field is required.'
+                'required' => 'Guardian Name field is required.'
             ]
         ],
-    ];
 
-		public $schedules = [
-        'patient_id' => [
-            'label'  => 'Patient',
+				'guardian_relation' => [
+            'label'  => 'Guardian Relation',
             'rules'  => 'required',
             'errors' => [
-                'required' => 'Patient field is required.'
+                'required' => 'Guardian Relation field is required.'
             ]
         ],
 
-        'target_date_start' => [
-            'label'  => 'Target Date Start',
+				'previous_dentist' => [
+            'label'  => 'Previous Dentist',
             'rules'  => 'required',
             'errors' => [
-                'required' => 'Target Date Start field is required.'
+                'required' => 'Previous Dentist field is required.'
             ]
         ],
 
-        'target_date_end' => [
-            'label'  => 'Target Date End',
+				'last_dental_visit' => [
+            'label'  => 'Last Dental Visit',
             'rules'  => 'required',
             'errors' => [
-                'required' => 'Target Date End field is required.'
+                'required' => 'Last Dental Visit field is required.'
             ]
         ],
+			];
+		public $allergies = [
+		'med_name' => [
+				'label'  => 'Previous Dentist',
+				'rules'  => 'required',
+				'errors' => [
+						'required' => 'Medicine Name field is required.'
+				]
+		],
 
-        'venue' => [
-            'label'  => 'Venue',
-            'rules'  => 'required',
-            'errors' => [
-                'required' => 'Venue field is required.'
-            ]
-        ],
-
-        'dentist_id' => [
-            'label'  => 'Dentist',
-            'rules'  => 'required',
-            'errors' => [
-                'required' => 'Dentist field is required.'
-            ]
-        ],
-
-        'consultation_sched' => [
-            'label'  => 'Consultation Schedules',
-            'rules'  => 'required',
-            'errors' => [
-                'required' => 'Consultation Schedules field is required.'
-            ]
-        ],
-
-
-        'is_approved' => [
-            'label'  => 'Approved by',
-            'rules'  => 'required',
-            'errors' => [
-                'required' => 'Approved by field is required.'
-            ]
-        ],
-    ];
-
+		'description' => [
+				'label'  => 'Last Dental Visit',
+				'rules'  => 'required',
+				'errors' => [
+						'required' => 'Medicine Description field is required.'
+				]
+		],
+	];
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------

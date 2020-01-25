@@ -57,17 +57,8 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 			'Modules\Node'  => ROOTPATH.'modules/Node',
 			'Modules\UserManagement'  => ROOTPATH.'modules/UserManagement',
 			'Modules\PatientManagement'  => ROOTPATH.'modules/PatientManagement',
-			'Modules\SupplyStocksManagement'  => ROOTPATH.'modules/SupplyStocksManagement',
-			'Modules\MedicineManagement'  => ROOTPATH.'modules/MedicineManagement',
-			'Modules\SuppliesManagement'  => ROOTPATH.'modules/SuppliesManagement',
 			'Modules\ClinicSettings'  => ROOTPATH.'modules/ClinicSettings',
-			'Modules\Dental_conditionManagement'  => ROOTPATH.'modules/Dental_conditionManagement',
-			'Modules\DentalProceduresManagement'  => ROOTPATH.'modules/DentalProceduresManagement',
 			'Modules\Inventory'  => ROOTPATH.'modules/Inventory',
-			'Modules\DentistManagement'  => ROOTPATH.'modules/DentistManagement',
-			'Modules\Reports'  => ROOTPATH.'modules/Reports',
-			'Modules\MedicineAllergiesManagement'  => ROOTPATH.'MedicineAllergiesManagement',
-			'Modules\ConsultationSchedules'  => ROOTPATH.'modules/ConsultationSchedules',
 		];
 
 		//echo $psr4['Modules'];  die();
